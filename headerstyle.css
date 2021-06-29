@@ -1,0 +1,42 @@
+/* Mimi's work on the header */
+header {
+    font-family: "monaco", monospace;
+    background-color: #00a896;
+    text-align: center;
+    padding: 20px;
+    font-size: 15;
+    color: #F0F3BD;
+}
+/* Mimi's Navigation Bar */
+
+ul {
+    font-family: "monaco", monospace;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    background-color: #05668D;
+    width: 100%;
+  }
+  
+  li a {
+    display: block;
+    color: #0AFFE7;
+    padding: 20px;
+    text-decoration: none;
+    float: left;
+    width: 33.33%;
+    text-align: center;
+
+  }
+/* A navigation section will change color is hovered over*/
+  li a:hover:not(.active) {
+    background-color: #055270;
+/* The active tab will be a different color*/
+  }
+  .active {
+    background-color: #02C39A;
+  }
+  
+  /* Mimi's Navigation Bar */
+/* Mimi's work on the header */
