@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="body.css">
+	<title>Battleship</title>
+</head>
+
+
+<body>
+    <div class="board">
+            <table>
+                <tr>
+                    <th class="numbers"></th>
+                    <th class="numbers">1</th>
+                    <th class="numbers">2</th>
+                    <th class="numbers">3</th>
+                    <th class="numbers">4</th>
+                    <th class="numbers">5</th>
+                    <th class="numbers">6</th>
+                    <th class="numbers">7</th>
+                    <th class="numbers">8</th>
+                    <th class="numbers">9</th>
+                </tr>
+
+                <tr>
+                    <th class="letters">A</th>
+                        <td><div id="a1"></div></td>
+                        <td><div id="a2"></div></td>
+                        <td><div id="a3"></div></td>
+                        <td><div id="a4"></div></td>
+                        <td><div id="a5"></div></td>
+                        <td><div id="a6"></div></td>
+                        <td><div id="a7"></div></td>
+                        <td><div id="a8"></div></td>
+                        <td><div id="a9"></div></td>
+                </tr>
+                <tr>
+                    
+                    <th class="letters">B</th>
+                        <td><div id="b1"></div></td>
+                        <td><div id="b2"></div></td>
+                        <td><div id="b3"></div></td>
+                        <td><div id="b4"></div></td>
+                        <td><div id="b5"></div></td>
+                        <td><div id="b6"></div></td>
+                        <td><div id="b7"></div></td>
+                        <td><div id="b8"></div></td>
+                        <td><div id="b9"></div></td>
+                </tr>
+                <tr>
+                    <th class="letters">C</th>
+                        <td><div id="c1"></div></td>
+                        <td><div id="c2"></div></td>
+                        <td><div id="c3"></div></td>
+                        <td><div id="c4"></div></td>
+                        <td><div id="c5"></div></td>
+                        <td><div id="c6"></div></td>
+                        <td><div id="c7"></div></td>
+                        <td><div id="c8"></div></td>
+                        <td><div id="c9"></div></td>
+                </tr>
+                <tr>
+                    <th class="letters">D</th>
+                        <td><div id="d1"></div></td>
+                        <td><div id="d2"></div></td>
+                        <td><div id="d3"></div></td>
+                        <td><div id="d4"></div></td>
+                        <td><div id="d5"></div></td>
+                        <td><div id="d6"></div></td>
+                        <td><div id="d7"></div></td>
+                        <td><div id="d8"></div></td>
+                        <td><div id="d9"></div></td>
+                </tr>
+                <tr>
+                    <th class="letters">E</td>
+                        <td><div id="e1"></div></td>
+                        <td><div id="e2"></div></td>
+                        <td><div id="e3"></div></td>
+                        <td><div id="e4"></div></td>
+                        <td><div id="e5"></div></td>
+                        <td><div id="e6"></div></td>
+                        <td><div id="e7"></div></td>
+                        <td><div id="e8"></div></td>
+                        <td><div id="e9"></div></td>
+                </tr>
+                <tr>
+                    <th class="letters">F</td>
+                        <td><div id="f1"></div></td>
+                        <td><div id="f2"></div></td>
+                        <td><div id="f3"></div></td>
+                        <td><div id="f4"></div></td>
+                        <td><div id="f5"></div></td>
+                        <td><div id="f6"></div></td>
+                        <td><div id="f7"></div></td>
+                        <td><div id="f8"></div></td>
+                        <td><div id="f9"></div></td>
+                </tr>
+                <tr>
+                    <th class="letters">G</td>
+                        <td><div id="g1"></div></td>
+                        <td><div id="g2"></div></td>
+                        <td><div id="g3"></div></td>
+                        <td><div id="g4"></div></td>
+                        <td><div id="g5"></div></td>
+                        <td><div id="g6"></div></td>
+                        <td><div id="g7"></div></td>
+                        <td><div id="g8"></div></td>
+                        <td><div id="g9"></div></td>
+                </tr>
+                <tr>
+                    <th class="letters">H</td>
+                        <td><div id="h1"></div></td>
+                        <td><div id="h2"></div></td>
+                        <td><div id="h3"></div></td>
+                        <td><div id="h4"></div></td>
+                        <td><div id="h5"></div></td>
+                        <td><div id="h6"></div></td>
+                        <td><div id="h7"></div></td>
+                        <td><div id="h8"></div></td>
+                        <td><div id="h9"></div></td>
+                </tr>
+                <tr>
+                    <th class="letters">I</td>
+                        <td><div id="i1"></div></td>
+                        <td><div id="i2"></div></td>
+                        <td><div id="i3"></div></td>
+                        <td><div id="i4"></div></td>
+                        <td><div id="i5"></div></td>
+                        <td><div id="i6"></div></td>
+                        <td><div id="i7"></div></td>
+                        <td><div id="i8"></div></td>
+                        <td><div id="i9"></div></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="scoreboard">
+        <p id="title">SCOREBOARD</p>
+        <h1><span id="p1Score">0</span> to <span id="p2Score">0</span></h1>
+    </div>
+    <div class="turn_indicator">
+        <p id="title"; class="test">Turn Indicator</p>
+    </div>
+    <div class="btn-group">
+        
+        <button>Mark</button>
+        <button>Place Ship</button>
+        <button>Restart</button>
+      </div>
+    
+    <script src="logic.js"></script>
+      
+       
+</body>
+</html>
