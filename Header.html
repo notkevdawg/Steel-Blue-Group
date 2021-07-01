@@ -2,21 +2,201 @@
 <html lang="en-us">
     <head>
         <meta charset="utf-8">
+        <!-- Cedric -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                <!-- Cedric -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        <!-- <link rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous"> -->
         <link href="headerstyle.css" type="text/css" rel="stylesheet">
-<title>Steel Blue Games</title>
-<header>
-    <h1>Battleship</h1>
-</header>
-<nav>
-    <ul>
-      <li><a class="active" href="Header.html">Play The Game</a></li>
-      <li><a href="">Rules</a></li>
-      <li><a href="">About Us</a></li>
-    </ul>
-  </nav>
-    </head>
+      <title>Steel Blue Games</title>
+      <!-- hr style -->
+      <style>
+         /* Start of Cedric's*/
+      hr 
+        {
+            width: 100%;
+            height: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: black;
+        }
+        footer
+        {   font-family: "monaco", monospace;
+            background-color: #00a896;
+            padding: 20px;
+            font-size: 15;
+            color: #F0F3BD;
+            }
+        .footer 
+        {
+            font-family: "monaco", monospace;
+            background-color: #00a896;
+            text-align: center;
+            padding: 20px;
+            font-size: 15;
+            color: #F0F3BD;
+        }
+        * {
+         padding: 0;
+        margin: auto;
+        box-sizing: border-box;
+        }
+        body {
+        font-family: "monaco";
+        }
+        section {
+        height: 100vh;
+        width: 100%;
+        background-color: #00a896;
+        display: flex;
+        align-items: right;
+        justify-content: right;
+        flex-direction: column;
+        }
+        .container {
+        display: inline-flex;
+        position: relative;
+        width: 100%;
+        padding: 20px;
+        padding-top: 0px;
+        box-shadow: 0px 0px 20px #00000010;
+        background-color: #02c39a;
+        border-radius: 20px;
+        /* margin-bottom: 20px; */
+        }
+        .form-group {
+        display: inline-block;
+        margin-top: 20px;
+        font-size: 20px;
+        float: left;
+        }
+        .id
+        {
+        width: 30%;
+        }
+        .nonfirst
+        {
+            margin-left: 5%;
+        }
+        .message
+        {
+        width: 100%;
+        }
+        .form-group input,
+        .form-group textarea {
+        display: inline-flex;
+        width: 100%;
+        padding: 5px;
+        font-size: 18px;
+        border: 2px solid rgba(128, 128, 128, 0.199);    
+        margin-top: 5px;
+        }
+        textarea {
+        resize: vertical;
+        }
+        button[type="submit"] {
+        width: 100%;
+        border: none;
+        outline: none;
+        padding: 20px;
+        font-size: 24px;
+        border-radius: 8px;
+        font-family: "Monaco";
+        color: #F0F3BD;
+        background-color: #00a896;
+        text-align: center;
+        cursor: pointer;
+        margin-top: 10px;
+        transition: 0.3s ease background-color;
+        }
+        button[type="submit"]:hover {
+        background-color:#05668d;
+        }
+        label
+        {
+            color: #F0F3BD;
+            font-family: "Monaco";
+        }
+        #status {
+        width: 90%;
+        max-width: 500px;
+        text-align: center;
+        /* padding: 10px; */
+        margin: 0 auto;
+        border-radius: 8px;
+        }
+        #status.success {
+        background-color: rgb(211, 250, 153);
+        animation: status 4s ease forwards;
+        }
+        #status.error {
+        background-color: rgb(250, 129, 92);
+        color: white;
+        animation: status 4s ease forwards;
+        }
+        @keyframes status {
+        0% {
+            opacity: 1;
+            pointer-events: all;
+        }
+        90% {
+            opacity: 1;
+            pointer-events: all;
+        }
+        100% {
+            opacity: 0;
+            pointer-events: none;
+        }
+      }
+      /* End of Cedric's */
+    </style>
+</head>
     <body>
+      <header>
+        <h1>Battleship</h1>
+    </header>
+    <nav>
+        <ul>
+          <li><a class="active" href="Header.html">Play The Game</a></li>
+          <li><a href="">Rules</a></li>
+          <li><a href="">About Us</a></li>
+        </ul>
+      </nav>
+      <!-- Start of Cedric's -->
+      <div class="footer">
+            <p>Battleship</p>
+        </div>
+        <div class="container">
+            <form action="https://formspree.io/mbjzbwaj" method="POST" id="my-form">
+        
+              <div class="form-group id">
+                <label for="firstName"> First Name:</label>
+                <input type="text" id="firstName" name="firstName">
+              </div>
+        
+              <div class="form-group id nonfirst">
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName">
+              </div>
+        
+              <div class="form-group id nonfirst">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+              </div>
+        
+              <div class="form-group message">
+                <label for="message">Message for us:</label>
+                <textarea name="message" id="message" cols="30" rows="2"></textarea>
+              </div>
+        
+              <button type="submit">Submit</button>
+            </form>
+          </div>
+          <div id="status"></div>
+        <section>
+            
+          </section>
+    </footer>
+    <!-- End of Cedric's -->
 </body>
 </html>
